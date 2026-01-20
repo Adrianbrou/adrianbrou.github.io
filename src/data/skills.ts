@@ -6,7 +6,16 @@
 //     { id: 5, name: 'React', icon: '⚛️', description: 'Modern React, Hooks, Context', level: 80 },
 //     { id: 6, name: 'Git', icon: '🔀', description: 'Version Control', level: 75 }
 // ]
-export const skills = [
+type Skill = {
+
+    id: number,
+    name: string,
+    icon: string,
+    description: string
+    level: number
+
+}
+export const skills: Skill[] = [
     {
         id: 1,
         name: 'Python',

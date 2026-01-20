@@ -88,3 +88,47 @@
     opacity: 0;
   }
 }
+
+/*==============================================
+background animation-360CR
+===========================================*/
+.container-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 200px;
+  height: 250px;
+  border-radius: 16px;
+
+
+}
+
+.container-wrapper::before {
+  content: '';
+  position: absolute;
+  width: 150%;
+  height: 150%;
+  background: conic-gradient(#ff00c8 0 25%, transparent 25% 50%, #6aff00 50% 75%, transparent 75%);
+  animation: animate 3s linear infinite;
+
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.container-wrapper::after {
+  content: '';
+  position: absolute;
+  inset: 4px;
+  background: black;
+  border-radius: 16px;
+}

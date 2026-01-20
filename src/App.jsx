@@ -9,6 +9,7 @@ import Links from './pages/Links'
 import Blog from './pages/Blog'
 import Contact from './pages/Contact'
 
+
 function App() {
   return (
     <Layout>
@@ -21,6 +22,7 @@ function App() {
         <Route path="/links" element={<Links />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/contact" element={<Contact />} />
+        {/* <Route path="*" element={<PageNotFound />} /> */}
       </Routes>
     </Layout>
   )
