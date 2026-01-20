@@ -3,6 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
+  "homepage": "https://adrianbrou.github.io/portfolio",
   "dependencies": {
     "framer-motion": "^10.16.16",
     "lucide-react": "^0.263.1",
