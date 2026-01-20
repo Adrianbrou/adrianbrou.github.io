@@ -1,0 +1,134 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply font-sans antialiased bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-300;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-6 py-3 bg-primary-600 text-white rounded-lg font-semibold hover:bg-primary-700 transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5;
+  }
+
+  .btn-secondary {
+    @apply px-6 py-3 bg-transparent text-primary-600 dark:text-primary-400 border-2 border-primary-600 dark:border-primary-400 rounded-lg font-semibold hover:bg-primary-600 hover:text-white transition-all duration-300;
+  }
+
+  .card {
+    @apply bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2;
+    /* Hover + lift + shadow effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .section-title {
+    @apply text-4xl md:text-5xl font-bold text-center mb-4 text-gray-900 dark:text-white;
+  }
+
+  .section-subtitle {
+    @apply text-center text-gray-600 dark:text-gray-400 mb-12 max-w-2xl mx-auto;
+  }
+}
+
+/* Global cursor scale effect for all cards */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+}
+
+.scroll-to-top {
+  @apply fixed bottom-8 right-8 p-3 bg-primary-600 text-white rounded-full shadow-lg hover:bg-primary-700 transition-all duration-300 hover:scale-110 z-50;
+  cursor: pointer;
+}
+
+/* ===========================
+   SCROLL-APPEAR ANIMATION
+=========================== */
+.opacity-0 {
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+.opacity-100 {
+  opacity: 1;
+  transform: translateY(0);
+  transition: transform 0.7s ease, opacity 0.7s ease;
+}
+
+/* Ripple effect */
+/* Ripple / drip effect */
+.ripple {
+  position: relative;
+  overflow: hidden;
+}
+
+.ripple span {
+  position: absolute;
+  border-radius: 50%;
+  transform: scale(0);
+  animation: ripple-animation 600ms linear;
+  background-color: rgba(255, 255, 255, 0.3);
+  pointer-events: none;
+}
+
+@keyframes ripple-animation {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+
+/*==============================================
+background animation-360CR
+===========================================*/
+.container-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 200px;
+  height: 250px;
+  border-radius: 16px;
+
+
+}
+
+.container-wrapper::before {
+  content: '';
+  position: absolute;
+  width: 150%;
+  height: 150%;
+  background: conic-gradient(#ff00c8 0 25%, transparent 25% 50%, #6aff00 50% 75%, transparent 75%);
+  animation: animate 3s linear infinite;
+
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.container-wrapper::after {
+  content: '';
+  position: absolute;
+  inset: 4px;
+  background: black;
+  border-radius: 16px;
+}
