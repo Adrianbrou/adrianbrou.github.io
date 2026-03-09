@@ -1,6 +1,5 @@
-import { ExternalLink } from 'lucide-react'
-import { FaGithub, FaLinkedin, FaKaggle, FaTwitter } from 'react-icons/fa'
-import { SiNotion } from 'react-icons/si'
+import { ExternalLink, Code } from 'lucide-react'
+import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import { useScrollAnimation } from '../hooks/useScrollAnimation'
 import { FaFilePdf } from 'react-icons/fa'
 
@@ -23,7 +22,7 @@ const Links = () => {
         {
             name: 'Boot.dev',
             url: 'https://www.boot.dev/u/overcookedbath96',
-            icon: FaGithub,
+            icon: Code,
             description: 'Level 50 Scholar — 569 lessons solved, 7 courses completed, 32-day streak on the Back-end Developer Path',
             color: 'bg-orange-500',
         },
