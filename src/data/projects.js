@@ -1,10 +1,11 @@
 export const projects = [
     {
         id: 1,
-        title: "Gas 'Up",
-        description: 'Full-stack data-driven application for real-time fuel price and station data analytics. Built the backend with FastAPI and PostgreSQL, implemented RESTful APIs, secure data storage, and optimized server-side logic. Deployed end-to-end.',
+        title: 'FuelCast',
+        description: 'Full-stack data-driven application for real-time fuel price and station data analytics. Built the backend with FastAPI and PostgreSQL, implemented RESTful APIs, secure data storage, and optimized server-side logic. Deployed end-to-end on Railway.',
         tags: ['Python', 'FastAPI', 'PostgreSQL', 'React', 'REST API'],
         github: 'https://github.com/Adrianbrou',
+        demo: 'https://fuelcast-production.up.railway.app/',
         featured: true,
     },
     {

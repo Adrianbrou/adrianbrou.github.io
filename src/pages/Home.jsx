@@ -56,7 +56,7 @@ const Home = () => {
         {
             icon: TrendingUp,
             title: 'Full-Stack Deployment',
-            description: 'Built and deployed Gas \'Up end-to-end — real-time analytics, 1,500+ records served',
+            description: 'Built and deployed FuelCast end-to-end on Railway — real-time fuel analytics, 1,500+ records served',
         },
     ]
 

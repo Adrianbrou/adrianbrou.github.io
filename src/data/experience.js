@@ -17,12 +17,12 @@ export const experience = [
     },
     {
         id: 2,
-        title: "Real World Project: Gas 'Up (Full-Stack, Deployed)",
+        title: 'Real World Project: FuelCast (Full-Stack, Deployed on Railway)',
         company: 'Independent',
         location: 'Remote',
         period: '2025 - Present',
         description: [
-            'Built and deployed a full-stack data-driven application for real-time fuel price and station data analytics.',
+            'Built and deployed FuelCast — a full-stack data-driven app for real-time fuel price and station analytics (live on Railway).',
             'Developed the backend using Python, FastAPI, and PostgreSQL — RESTful APIs, authentication, CRUD operations.',
             'Implemented secure data storage and optimized server-side logic for analytics workloads.',
             '33+ commits this month across active repositories.'
