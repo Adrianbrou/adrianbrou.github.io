@@ -2,11 +2,11 @@ import { ExternalLink, Award, BookOpen, Zap, Star } from 'lucide-react'
 import { useScrollAnimation } from '../hooks/useScrollAnimation'
 
 const bootdevCourses = [
-    { title: 'Learn to Code in Python', date: 'Feb 23, 2026', icon: '🐍' },
-    { title: 'Learn Object Oriented Programming in Python', date: 'Mar 6, 2026', icon: '🧩' },
+    { title: 'Introduction to Python Course', date: 'Feb 23, 2026', icon: '🐍' },
     { title: 'Learn Linux', date: 'Feb 25, 2026', icon: '🐧' },
     { title: 'Learn Git', date: 'Mar 2, 2026', icon: '🔀' },
-    { title: 'Learn Data Visualization with Power BI', date: 'Feb 20, 2026', icon: '📊' },
+    { title: 'Learn Data Visualization with Power BI', date: 'Feb 2026', icon: '📊' },
+    { title: 'Learn Object Oriented Programming in Python', date: 'Mar 9, 2026', icon: '🧩' },
 ]
 
 const bootdevProjects = [
@@ -15,14 +15,14 @@ const bootdevProjects = [
         date: 'Feb 25, 2026',
         description: 'Text analysis tool that reads a book and generates word frequency and character statistics.',
         icon: '📚',
-        github: 'https://github.com/Adrianbrou/bootdev',
+        github: 'https://github.com/Adrianbrou/bookbot',
     },
     {
         title: 'Build Asteroids using Python and Pygame',
         date: 'Mar 7, 2026',
         description: 'Full arcade game built from scratch — OOP, game loops, collision detection, real-time rendering.',
         icon: '🎮',
-        github: 'https://github.com/Adrianbrou/pygame',
+        github: 'https://github.com/Adrianbrou/asteroids',
     },
 ]
 
@@ -70,6 +70,13 @@ const otherCerts = [
         color: 'bg-red-600',
     },
     {
+        title: 'DevOps Foundations',
+        issuer: 'Wells Fargo',
+        status: 'Completed',
+        icon: '⚙️',
+        color: 'bg-red-700',
+    },
+    {
         title: 'Machine Learning 300',
         issuer: 'Boot.dev',
         status: 'In Progress',
@@ -84,6 +91,96 @@ const otherCerts = [
         color: 'bg-orange-500',
     },
 ]
+
+// Extracted components so useScrollAnimation is called at top-level (not inside .map)
+const CourseCard = ({ course }) => {
+    const [ref, isVisible] = useScrollAnimation()
+    return (
+        <div
+            ref={ref}
+            className={`card p-6 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
+        >
+            <div className="text-4xl mb-3">{course.icon}</div>
+            <h3 className="font-bold text-gray-900 dark:text-white mb-2 leading-snug">
+                {course.title}
+            </h3>
+            <div className="flex items-center justify-between">
+                <span className="text-sm text-gray-500 dark:text-gray-400">{course.date}</span>
+                <span className="px-2 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400 text-xs font-semibold rounded-full">
+                    ✓ Completed
+                </span>
+            </div>
+        </div>
+    )
+}
+
+const ProjectCard = ({ project }) => {
+    const [ref, isVisible] = useScrollAnimation()
+    return (
+        <div
+            ref={ref}
+            className={`card p-6 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
+        >
+            <div className="text-4xl mb-3">{project.icon}</div>
+            <h3 className="font-bold text-gray-900 dark:text-white mb-2">{project.title}</h3>
+            <p className="text-gray-600 dark:text-gray-400 text-sm mb-4">{project.description}</p>
+            <div className="flex items-center justify-between">
+                <span className="text-sm text-gray-500 dark:text-gray-400">{project.date}</span>
+                <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-1 text-sm text-primary-600 dark:text-primary-500 font-semibold hover:underline"
+                >
+                    GitHub <ExternalLink size={13} />
+                </a>
+            </div>
+        </div>
+    )
+}
+
+const AchievementCard = ({ ach }) => {
+    const [ref, isVisible] = useScrollAnimation()
+    return (
+        <div
+            ref={ref}
+            className={`card p-6 text-center transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
+        >
+            <div className={`w-16 h-16 ${ach.color} rounded-full flex items-center justify-center text-3xl mx-auto mb-4`}>
+                {ach.icon}
+            </div>
+            <div className="text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wide mb-1">
+                {ach.subtitle}
+            </div>
+            <h3 className="font-bold text-gray-900 dark:text-white mb-1">{ach.title}</h3>
+            <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">{ach.description}</p>
+            <span className="text-xs text-gray-400">{ach.date}</span>
+        </div>
+    )
+}
+
+const OtherCertCard = ({ cert }) => {
+    const [ref, isVisible] = useScrollAnimation()
+    return (
+        <div
+            ref={ref}
+            className={`card p-6 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
+        >
+            <div className={`w-14 h-14 ${cert.color} rounded-xl flex items-center justify-center text-3xl mb-4`}>
+                {cert.icon}
+            </div>
+            <h3 className="font-bold text-gray-900 dark:text-white mb-1">{cert.title}</h3>
+            <p className="text-sm text-gray-500 dark:text-gray-400 mb-3">{cert.issuer}</p>
+            <span className={`px-3 py-1 text-xs font-semibold rounded-full ${
+                cert.status === 'Completed'
+                    ? 'bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400'
+                    : 'bg-yellow-100 dark:bg-yellow-900/30 text-yellow-700 dark:text-yellow-400'
+            }`}>
+                {cert.status === 'Completed' ? '✓ ' : '⏳ '}{cert.status}
+            </span>
+        </div>
+    )
+}
 
 const Certifications = () => {
     const [heroRef, heroVisible] = useScrollAnimation()
@@ -123,7 +220,7 @@ const Certifications = () => {
                                 <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
                                     {[
                                         { label: 'Lessons Solved', value: '569' },
-                                        { label: 'Courses Done', value: '5' },
+                                        { label: 'Courses Done', value: '7' },
                                         { label: 'Current Streak', value: '32 days' },
                                         { label: 'XP Earned', value: '115,816' },
                                     ].map((stat) => (
@@ -158,27 +255,9 @@ const Certifications = () => {
                         </h2>
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                        {bootdevCourses.map((course, index) => {
-                            const [ref, isVisible] = useScrollAnimation()
-                            return (
-                                <div
-                                    key={index}
-                                    ref={ref}
-                                    className={`card p-6 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
-                                >
-                                    <div className="text-4xl mb-3">{course.icon}</div>
-                                    <h3 className="font-bold text-gray-900 dark:text-white mb-2 leading-snug">
-                                        {course.title}
-                                    </h3>
-                                    <div className="flex items-center justify-between">
-                                        <span className="text-sm text-gray-500 dark:text-gray-400">{course.date}</span>
-                                        <span className="px-2 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400 text-xs font-semibold rounded-full">
-                                            ✓ Completed
-                                        </span>
-                                    </div>
-                                </div>
-                            )
-                        })}
+                        {bootdevCourses.map((course, index) => (
+                            <CourseCard key={index} course={course} />
+                        ))}
                     </div>
                 </section>
 
@@ -193,31 +272,9 @@ const Certifications = () => {
                         </h2>
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        {bootdevProjects.map((project, index) => {
-                            const [ref, isVisible] = useScrollAnimation()
-                            return (
-                                <div
-                                    key={index}
-                                    ref={ref}
-                                    className={`card p-6 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
-                                >
-                                    <div className="text-4xl mb-3">{project.icon}</div>
-                                    <h3 className="font-bold text-gray-900 dark:text-white mb-2">{project.title}</h3>
-                                    <p className="text-gray-600 dark:text-gray-400 text-sm mb-4">{project.description}</p>
-                                    <div className="flex items-center justify-between">
-                                        <span className="text-sm text-gray-500 dark:text-gray-400">{project.date}</span>
-                                        <a
-                                            href={project.github}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            className="flex items-center gap-1 text-sm text-primary-600 dark:text-primary-500 font-semibold hover:underline"
-                                        >
-                                            GitHub <ExternalLink size={13} />
-                                        </a>
-                                    </div>
-                                </div>
-                            )
-                        })}
+                        {bootdevProjects.map((project, index) => (
+                            <ProjectCard key={index} project={project} />
+                        ))}
                     </div>
                 </section>
 
@@ -232,26 +289,9 @@ const Certifications = () => {
                         </h2>
                     </div>
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                        {bootdevAchievements.map((ach, index) => {
-                            const [ref, isVisible] = useScrollAnimation()
-                            return (
-                                <div
-                                    key={index}
-                                    ref={ref}
-                                    className={`card p-6 text-center transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
-                                >
-                                    <div className={`w-16 h-16 ${ach.color} rounded-full flex items-center justify-center text-3xl mx-auto mb-4`}>
-                                        {ach.icon}
-                                    </div>
-                                    <div className="text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wide mb-1">
-                                        {ach.subtitle}
-                                    </div>
-                                    <h3 className="font-bold text-gray-900 dark:text-white mb-1">{ach.title}</h3>
-                                    <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">{ach.description}</p>
-                                    <span className="text-xs text-gray-400">{ach.date}</span>
-                                </div>
-                            )
-                        })}
+                        {bootdevAchievements.map((ach, index) => (
+                            <AchievementCard key={index} ach={ach} />
+                        ))}
                     </div>
                 </section>
 
@@ -265,30 +305,10 @@ const Certifications = () => {
                             Other Certifications
                         </h2>
                     </div>
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                        {otherCerts.map((cert, index) => {
-                            const [ref, isVisible] = useScrollAnimation()
-                            return (
-                                <div
-                                    key={index}
-                                    ref={ref}
-                                    className={`card p-6 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
-                                >
-                                    <div className={`w-14 h-14 ${cert.color} rounded-xl flex items-center justify-center text-3xl mb-4`}>
-                                        {cert.icon}
-                                    </div>
-                                    <h3 className="font-bold text-gray-900 dark:text-white mb-1">{cert.title}</h3>
-                                    <p className="text-sm text-gray-500 dark:text-gray-400 mb-3">{cert.issuer}</p>
-                                    <span className={`px-3 py-1 text-xs font-semibold rounded-full ${
-                                        cert.status === 'Completed'
-                                            ? 'bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400'
-                                            : 'bg-yellow-100 dark:bg-yellow-900/30 text-yellow-700 dark:text-yellow-400'
-                                    }`}>
-                                        {cert.status === 'Completed' ? '✓ ' : '⏳ '}{cert.status}
-                                    </span>
-                                </div>
-                            )
-                        })}
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        {otherCerts.map((cert, index) => (
+                            <OtherCertCard key={index} cert={cert} />
+                        ))}
                     </div>
                 </section>
 
