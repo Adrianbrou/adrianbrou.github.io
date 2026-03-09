@@ -43,6 +43,18 @@ export const experience = [
     },
     {
         id: 4,
+        title: 'Member — US Air National Guard',
+        company: 'United States Air National Guard',
+        location: 'North Carolina',
+        period: 'Current',
+        description: [
+            'Active member of the US Air National Guard.',
+            'ASVAB score: 71 overall, 81 in Electronics — qualifying for Cyber Systems Operations.',
+            'Demonstrates discipline, teamwork, and commitment to service alongside a technical career.'
+        ]
+    },
+    {
+        id: 5,
         title: 'Freelance Web Developer',
         company: 'Self-Employed',
         location: 'Remote',

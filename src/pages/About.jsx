@@ -53,6 +53,14 @@ const About = () => {
                                     solved 569 lessons, and maintained a 32-day streak — without skipping a single day.
                                     I ship clean, tested code every day and can explain every line I've written.
                                 </p>
+                                <div className="flex flex-wrap gap-3 mb-6">
+                                    <span className="inline-flex items-center gap-2 px-4 py-2 bg-blue-700 text-white text-sm font-semibold rounded-full">
+                                        ✈️ US Air National Guard — Member
+                                    </span>
+                                    <span className="inline-flex items-center gap-2 px-4 py-2 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 text-sm font-semibold rounded-full">
+                                        🎓 Master's in Software Engineering
+                                    </span>
+                                </div>
                                 <a
                                     href="/resume.pdf"
                                     download
