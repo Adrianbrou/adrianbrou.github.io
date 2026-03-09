@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { ExternalLink, Github } from 'lucide-react'
+import { ExternalLink, Github, PlayCircle } from 'lucide-react'
 import { useScrollAnimation } from '../hooks/useScrollAnimation'
 import { projects } from '../data/projects'
 
@@ -30,7 +30,7 @@ const ProjectCard = ({ project }) => {
                         </span>
                     ))}
                 </div>
-                <div className="flex gap-4">
+                <div className="flex flex-wrap gap-4">
                     {project.github && (
                         <a href={project.github} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-primary-600 dark:text-primary-500 hover:underline">
                             <Github size={18} /> Code
@@ -39,6 +39,11 @@ const ProjectCard = ({ project }) => {
                     {project.demo && (
                         <a href={project.demo} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-primary-600 dark:text-primary-500 hover:underline">
                             <ExternalLink size={18} /> Live Demo
+                        </a>
+                    )}
+                    {project.video && (
+                        <a href={project.video} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-blue-600 dark:text-blue-400 hover:underline">
+                            <PlayCircle size={18} /> Video Demo
                         </a>
                     )}
                 </div>

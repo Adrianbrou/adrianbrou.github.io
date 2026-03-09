@@ -6,6 +6,7 @@ export const projects = [
         tags: ['Python', 'FastAPI', 'PostgreSQL', 'React', 'REST API'],
         github: 'https://github.com/Adrianbrou/gas-up_demo',
         demo: 'https://fuelcast-production.up.railway.app/',
+        video: 'https://www.linkedin.com/posts/adrianbrou_dataanalytics-sql-postgis-activity-7430241867465842689-Y8VP',
         featured: true,
     },
     {
