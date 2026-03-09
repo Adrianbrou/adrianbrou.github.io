@@ -43,12 +43,15 @@ const About = () => {
                                     Hi, I'm Adrian
                                 </h2>
                                 <p className="text-gray-600 dark:text-gray-300 mb-4 leading-relaxed">
-                                    I'm a passionate Junior Software Engineer and Data Analyst with a
-                                    strong foundation in web development and data science.
+                                    I'm a Backend Developer specializing in Python, FastAPI, Flask, and PostgreSQL.
+                                    I hold a Master's in Software Engineering and have been building real-world backends ever since —
+                                    from a full-stack analytics platform serving 1,500+ member records to Gas 'Up, a deployed
+                                    data-driven app with real-time fuel price analytics.
                                 </p>
                                 <p className="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
-                                    With expertise in Python and data visualization tools, I create applications
-                                    that provide meaningful insights.
+                                    In 51 days on Boot.dev's Back-end Developer Path, I completed 7 courses, earned 5 certificates,
+                                    solved 569 lessons, and maintained a 32-day streak — without skipping a single day.
+                                    I ship clean, tested code every day and can explain every line I've written.
                                 </p>
                                 <a
                                     href="/resume.pdf"

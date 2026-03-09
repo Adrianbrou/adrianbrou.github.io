@@ -45,18 +45,18 @@ const Home = () => {
     const features = [
         {
             icon: Code,
-            title: 'Web Development',
-            description: 'Building responsive, modern web applications with React',
+            title: 'Backend Development',
+            description: 'Python, FastAPI, Flask — clean REST APIs, authentication, CRUD, ETL pipelines',
         },
         {
             icon: Database,
-            title: 'Data Analysis',
-            description: 'Transforming complex data into actionable insights',
+            title: 'Database Engineering',
+            description: 'PostgreSQL, SQL optimization, complex JOINs, CTEs, sub-second query performance',
         },
         {
             icon: TrendingUp,
-            title: 'Data Visualization',
-            description: 'Creating interactive dashboards with Power BI',
+            title: 'Full-Stack Deployment',
+            description: 'Built and deployed Gas \'Up end-to-end — real-time analytics, 1,500+ records served',
         },
     ]
 
@@ -95,10 +95,10 @@ const Home = () => {
                             </span>
                         </h1>
                         <p className="text-2xl md:text-3xl mb-4 text-blue-100">
-                            Junior Software Engineer & Data Analyst
+                            Backend Developer (Python)
                         </p>
                         <p className="text-lg md:text-xl mb-8 text-blue-200 max-w-3xl mx-auto">
-                            Passionate about building innovative solutions and transforming data into actionable insights.
+                            Building reliable, scalable backends with Python, FastAPI, and PostgreSQL. 569 lessons. 7 courses. 32-day streak. Shipping every day.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                             <Link

@@ -1,59 +1,52 @@
-// export const projects = [
-//   {
-//     id: 1,
-//     title: 'E-Commerce Platform',
-//     description: 'Full-stack e-commerce website with shopping cart, payment integration, and admin dashboard.',
-//     tags: ['React', 'Node.js', 'MongoDB', 'Stripe'],
-//     github: 'https://github.com/yourusername/ecommerce',
-//     demo: 'https://demo.example.com'
-//   },
-//   {
-//     id: 2,
-//     title: 'Sales Analytics Dashboard',
-//     description: 'Interactive Power BI dashboard analyzing sales data with KPIs, trends, and forecasting.',
-//     tags: ['Power BI', 'DAX', 'SQL', 'Excel'],
-//     demo: 'https://powerbi.com/demo'
-//   },
-//   {
-//     id: 3,
-//     title: 'Data Analysis Tool',
-//     description: 'Python application for automated data cleaning, analysis, and visualization.',
-//     tags: ['Python', 'Pandas', 'Matplotlib'],
-//     github: 'https://github.com/yourusername/data-tool'
-//   }
-// ]
-
 export const projects = [
     {
         id: 1,
-        title: 'Phone Validation Program',
-        description: 'Python program that validates phone numbers and formats them according to international standards.',
-        tags: ['Python'],
-        github: 'https://github.com/Adrianbrou/Phone-Validation-Program',
-        // demo: ''
+        title: "Gas 'Up",
+        description: 'Full-stack data-driven application for real-time fuel price and station data analytics. Built the backend with FastAPI and PostgreSQL, implemented RESTful APIs, secure data storage, and optimized server-side logic. Deployed end-to-end.',
+        tags: ['Python', 'FastAPI', 'PostgreSQL', 'React', 'REST API'],
+        github: 'https://github.com/Adrianbrou',
+        featured: true,
     },
     {
         id: 2,
-        title: 'Diary Management System',
-        description: 'Python application to manage personal diary entries with options to add, edit, and delete entries.',
-        tags: ['Python'],
-        github: 'https://github.com/Adrianbrou/Diary-Management-System',
-        // demo: ''
+        title: 'SaaS CRM Backend (AF App)',
+        description: 'Full-stack analytics platform (Flask API + React frontend) serving 1,500+ member records at Anytime Fitness. Designed RESTful APIs supporting 15+ KPI tracking endpoints, optimized PostgreSQL queries for sub-second response times, and automated data exports saving 20+ hours/month.',
+        tags: ['Python', 'Flask', 'PostgreSQL', 'React', 'REST API', 'SQL'],
+        github: 'https://github.com/Adrianbrou/af_app',
     },
     {
         id: 3,
-        title: 'Online Library Management System',
-        description: 'Python project for managing books, users, and transactions in a library environment.',
-        tags: ['Python'],
-        github: 'https://github.com/Adrianbrou/Online-Library-Management-System',
-        // demo: ''
+        title: 'My API 2',
+        description: 'Full-stack backend API built with FastAPI featuring JWT authentication, database models, CRUD operations, and an interactive Swagger UI for API testing.',
+        tags: ['Python', 'FastAPI', 'REST API', 'Authentication', 'CRUD'],
+        github: 'https://github.com/Adrianbrou/my_api_2',
     },
     {
         id: 4,
-        title: 'My API 2',
-        description: 'FastAPI-based Python API for handling requests and serving JSON responses.',
-        tags: ['Python', 'FastAPI'],
-        github: 'https://github.com/Adrianbrou/my_api_2',
-        // image: "/assets/images/my_api_2.png",
-    }
+        title: 'Asteroids (Pygame)',
+        description: 'Full arcade game built from scratch using Python and Pygame. Developed as part of Boot.dev\'s Back-end Developer Path — covers OOP, game loops, collision detection, and real-time rendering.',
+        tags: ['Python', 'Pygame', 'OOP', 'Game Dev'],
+        github: 'https://github.com/Adrianbrou/pygame',
+    },
+    {
+        id: 5,
+        title: 'BookBot',
+        description: 'Python text analysis tool that reads a book file and generates a detailed report of word frequency, character counts, and statistics. Boot.dev platform project.',
+        tags: ['Python', 'Data Analysis', 'File Processing'],
+        github: 'https://github.com/Adrianbrou',
+    },
+    {
+        id: 6,
+        title: 'Diary Management System',
+        description: 'Python application to securely manage personal diary entries. Users can login, create, edit, delete, and search entries. Persists data using JSON with decorator-based authentication.',
+        tags: ['Python', 'JSON', 'CLI', 'Authentication'],
+        github: 'https://github.com/Adrianbrou/Diary-Management-System',
+    },
+    {
+        id: 7,
+        title: 'Phone Validation Program',
+        description: 'Python program that validates and formats phone numbers to international standards using regular expressions.',
+        tags: ['Python', 'Regex'],
+        github: 'https://github.com/Adrianbrou/Phone-Validation-Program',
+    },
 ];
