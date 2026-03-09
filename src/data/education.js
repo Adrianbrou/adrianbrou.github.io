@@ -14,8 +14,8 @@ export const education = [
         institution: 'Groupe École Supérieure de Commerce',
         period: '2020',
         gpa: '3.8/4.0',
-        description: '',
-        location: 'Côte d-Ivoire'
+        description: 'Advanced study in software architecture, systems design, database engineering, and project management.',
+        location: 'Côte d\'Ivoire'
     },
     {
         id: 3,
@@ -23,8 +23,8 @@ export const education = [
         institution: 'École Supérieure de Commerce, Administration and Management (ESCAM)',
         period: '2017',
         gpa: '3.6',
-        description: '',
-        location: 'Côte d-Ivoire'
+        description: 'Foundation in software engineering, object-oriented programming, database systems, and application development.',
+        location: 'Côte d\'Ivoire'
     },
     {
         id: 4,

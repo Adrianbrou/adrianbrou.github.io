@@ -84,7 +84,6 @@ const Contact = () => {
     const socialLinks = [
         { icon: FaGithub, url: 'https://github.com/Adrianbrou' },
         { icon: FaLinkedin, url: 'https://www.linkedin.com/in/salomon-brou-5b68aa320/' },
-        { icon: FaTwitter, url: 'https://twitter.com' },
     ]
 
     return (

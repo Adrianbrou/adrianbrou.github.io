@@ -5,10 +5,9 @@ const Footer = () => {
     const currentYear = new Date().getFullYear()
 
     const socialLinks = [
-        { name: 'GitHub', url: 'https://github.com/yourusername', icon: FaGithub },
-        { name: 'LinkedIn', url: 'https://linkedin.com/in/yourusername', icon: FaLinkedin },
-        { name: 'Twitter', url: 'https://twitter.com/yourusername', icon: FaTwitter },
-        { name: 'Email', url: 'mailto:your.email@example.com', icon: FaEnvelope },
+        { name: 'GitHub', url: 'https://github.com/Adrianbrou', icon: FaGithub },
+        { name: 'LinkedIn', url: 'https://www.linkedin.com/in/salomon-brou-5b68aa320/', icon: FaLinkedin },
+        { name: 'Email', url: 'mailto:adrian690@hotmail.fr', icon: FaEnvelope },
     ]
 
     const footerLinks = [
@@ -26,8 +25,7 @@ const Footer = () => {
                     <div>
                         <h3 className="text-white text-lg font-bold mb-4">Adrian Brou</h3>
                         <p className="text-gray-400 mb-4">
-                            Junior Software Engineer,Python programmer & Data Analyst passionate about building
-                            innovative solutions.
+                            Backend Developer (Python) — building reliable backends with FastAPI, PostgreSQL, and REST APIs. Shipping every day.
                         </p>
                         <div className="flex space-x-4">
                             {socialLinks.map((social) => {
