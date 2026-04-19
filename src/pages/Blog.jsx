@@ -5,6 +5,15 @@ const Blog = () => {
     const blogPosts = [
         {
             id: 1,
+            title: 'TrainerOS — The Operating System for Personal Trainers',
+            excerpt: 'I shipped TrainerOS v2.0.0 to production. A full-stack PWA for personal trainers, gym owners, and solo gym-goers — workout programming, session logging, nutrition tracking, real-time chat, Claude-powered Coach Assistant, and full gamification (XP, badges, frequency heatmap, prestige). 50+ trainers and clients use it daily. Stripe in LIVE mode. Built solo on React 19 + Supabase + Vercel.',
+            date: 'April 2026',
+            readTime: '7 min read',
+            category: 'Product Launch',
+            url: 'https://www.linkedin.com/posts/adrianbrou_traineros-the-operating-system-for-personal-activity-7450772379070492672-wQYx'
+        },
+        {
+            id: 2,
             title: '51 Days. 569 Lessons. 7 Courses. Here\'s What I Built.',
             excerpt: 'On January 17, 2026, I started Boot.dev\'s Back-end Developer Path (Python & Go) and committed to showing up every single day. 51 days later: 5 certificates, a deployed full-stack app (FuelCast), a SaaS CRM backend, and a 32-day streak. Here\'s what that actually looks like.',
             date: 'March 9, 2026',
@@ -13,7 +22,7 @@ const Blog = () => {
             url: 'https://www.linkedin.com/in/salomon-brou-5b68aa320/'
         },
         {
-            id: 2,
+            id: 3,
             title: 'Building FuelCast — A Full-Stack Fuel Analytics App',
             excerpt: 'How I built and deployed FuelCast end-to-end: FastAPI backend, PostgreSQL database with optimized queries, RESTful API design, authentication, and a React frontend — all deployed on Railway. Lessons learned from real production constraints.',
             date: 'February 2026',
@@ -22,7 +31,7 @@ const Blog = () => {
             url: 'https://github.com/Adrianbrou/gas-up_demo'
         },
         {
-            id: 3,
+            id: 4,
             title: 'Building the SaaS CRM Backend for Anytime Fitness',
             excerpt: 'A deep dive into designing a full-stack analytics platform serving 1,500+ member records — Flask API, PostgreSQL, 15+ KPI endpoints, sub-second query times, and automated Excel/CSV exports that saved 20+ hours of manual reporting per month.',
             date: 'November 2025',
@@ -31,7 +40,7 @@ const Blog = () => {
             url: 'https://github.com/Adrianbrou/Saas-CRM-Backend-gym-trainer-'
         },
         {
-            id: 4,
+            id: 5,
             title: 'SQL Optimization: From Slow Queries to Sub-Second Response',
             excerpt: 'Practical lessons from optimizing PostgreSQL queries for the AF analytics platform — complex JOINs, CTEs, window functions, and indexing strategies that brought response times under 1 second on 1,500+ record datasets.',
             date: 'January 2026',
@@ -40,7 +49,7 @@ const Blog = () => {
             url: 'https://www.linkedin.com/in/salomon-brou-5b68aa320/'
         },
         {
-            id: 5,
+            id: 6,
             title: 'From Trainer to Backend Developer — My Story',
             excerpt: 'Over 10 years leading teams and coaching 100+ clients. A Master\'s in Software Engineering. Freelance dev work in Côte d\'Ivoire. Then a gap. Here\'s how I closed it — and why I can explain every line of code I\'ve written.',
             date: 'October 2025',
