@@ -23,18 +23,18 @@ const Home = () => {
     const features = [
         {
             icon: Rocket,
-            title: 'Shipping to Production',
-            description: 'TrainerOS v2.0.0 — PWA for personal trainers. 50+ trainers and clients using it daily. Stripe LIVE, Supabase, Vercel.',
+            title: 'Production Products',
+            description: 'TrainerOS (aftrainer.app): gym management PWA with 50+ active users. Stripe, Supabase, Vercel.',
         },
         {
             icon: Code,
-            title: 'Backend Development',
-            description: 'Python, FastAPI, Flask — clean REST APIs, JWT auth, CRUD, ETL pipelines. Learning Go on Boot.dev.',
+            title: 'Backend Engineering',
+            description: 'Python, FastAPI, Flask. REST APIs, JWT authentication, database design, ETL pipelines. Currently learning Go.',
         },
         {
             icon: Database,
-            title: 'Databases & Cloud',
-            description: 'PostgreSQL with RLS, SQL optimization, sub-second queries. AWS: ECS Fargate, RDS, ECR, S3, VPC, IAM, Secrets Manager.',
+            title: 'Cloud & Databases',
+            description: 'PostgreSQL with row-level security and query optimization. AWS ECS Fargate, RDS, ECR, IAM, Secrets Manager.',
         },
     ]
 
@@ -69,7 +69,7 @@ const Home = () => {
                             Backend Developer (Python)
                         </p>
                         <p className="text-lg md:text-xl mb-8 text-blue-200 max-w-3xl mx-auto">
-                            I build and ship real products. TrainerOS — a full-stack PWA for personal trainers — is live with 50+ daily users. Currently contracting at Juice Labz LLC on a Go + React Native migration. Python, FastAPI, PostgreSQL, AWS.
+                            Backend developer focused on Python, PostgreSQL, and AWS. I designed and built TrainerOS, a gym management platform now serving 50+ daily users. Currently contracting at Juice Labz LLC on a Go and React Native migration.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                             <Link
@@ -97,10 +97,10 @@ const Home = () => {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-16">
                         <h2 className="text-4xl font-bold mb-4 text-gray-900 dark:text-white">
-                            What I Do
+                            Focus Areas
                         </h2>
                         <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-                            Real backends, shipped products, real users
+                            What I work on day to day
                         </p>
                     </div>
 

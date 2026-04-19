@@ -1,30 +1,29 @@
 export const experience = [
     {
         id: 1,
-        title: 'Backend Developer, Contractor',
+        title: 'Backend Developer (Contractor)',
         company: 'Juice Labz LLC (Streak Performance)',
         location: 'Remote',
         period: 'Dec 2025 - Present',
         description: [
-            'Migrating a golf fitness web app into a mobile app using Go and React Native (Expo).',
-            'Working directly with the founder on architecture and feature decisions.',
+            'Contracted to migrate a golf fitness web application into a mobile application using Go and React Native with Expo.',
+            'Working directly with the founder on backend architecture and product direction.',
         ]
     },
     {
         id: 2,
-        title: 'Founder & Full-Stack Developer — TrainerOS (aftrainer.app)',
-        company: 'Independent · Flagship Product',
+        title: 'Founder & Full-Stack Developer, TrainerOS',
+        company: 'Independent (aftrainer.app)',
         location: 'Remote',
         period: '2025 - Present',
         description: [
-            'Designed, built, and shipped TrainerOS — a full-stack PWA for personal trainers, gym owners, and solo gym-goers. Live in production with 50+ trainers and clients using it daily, Stripe in LIVE mode, real paid subscriptions.',
-            'Role-based platform: super_admin → admin (gym owners) → trainer ($19/mo) → solo ($7.99/mo) → client (invited, free).',
-            'Core features: workout programming, session logging, auto-detected supersets, auto-surfaced PRs, nutrition tracking, progress photos, real-time chat, messaging, and CSV/PDF export.',
-            'AI layer — "Coach Assistant" powered by Claude API via Supabase Edge Functions: 7 AI actions including workout suggestions, coaching notes, PR predictions, nutrition plans, and weekly recaps.',
-            'Gamification system: XP, 17+ badges across 6 rarities, GitHub-style frequency heatmap, ascension/prestige, and shared-XP (trainers earn 20% of their clients\' XP).',
-            'Built the full Supabase backend: 12-table schema, 25 SQL migrations, row-level security policies, Postgres security-definer functions, real-time subscriptions, and private file storage with signed URLs.',
-            'PWA with Workbox runtime caching, Web Push notifications (VAPID — RFC 8291 AES-128-GCM), and Capacitor configured for Android.',
-            'Infrastructure: Vercel (auto-deploy on push to main) + Vercel serverless functions, Stripe webhooks + customer portal, Sentry (browserTracing + replay on error), Resend for transactional email, Cloudflare DNS.',
+            'Designed and built TrainerOS, a gym management platform currently used by 50+ trainers and clients with paid Stripe subscriptions.',
+            'Implemented a role-based permission model covering gym administrators, trainers, solo members, and invited clients with tiered subscription pricing.',
+            'Built the core product feature set: workout programming, session logging, nutrition tracking, progress photos, real-time messaging, and CSV and PDF data export.',
+            'Integrated an AI coaching layer using the Claude API through seven Supabase Edge Functions, supporting workout suggestions, coaching notes, PR predictions, nutrition plans, and weekly summaries.',
+            'Developed a full Supabase backend consisting of a 12-table schema, 25 migrations, row-level security policies, security-definer functions, real-time subscriptions, and private file storage.',
+            'Configured the application as a progressive web app with Workbox runtime caching and Web Push notifications using the VAPID protocol.',
+            'Deployed on Vercel with Stripe webhooks, a customer portal, Sentry for error monitoring, Resend for transactional email, and Cloudflare for DNS.',
         ]
     },
     {

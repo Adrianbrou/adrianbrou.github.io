@@ -5,11 +5,11 @@ const Blog = () => {
     const blogPosts = [
         {
             id: 1,
-            title: 'TrainerOS — The Operating System for Personal Trainers',
-            excerpt: 'I shipped TrainerOS v2.0.0 to production. A full-stack PWA for personal trainers, gym owners, and solo gym-goers — workout programming, session logging, nutrition tracking, real-time chat, Claude-powered Coach Assistant, and full gamification (XP, badges, frequency heatmap, prestige). 50+ trainers and clients use it daily. Stripe in LIVE mode. Built solo on React 19 + Supabase + Vercel.',
+            title: 'TrainerOS: The Operating System for Personal Trainers',
+            excerpt: 'A write-up on the release of TrainerOS, a gym management platform I designed and built for personal trainers, gym owners, and individual members. The post covers the product surface — workout programming, session logging, nutrition tracking, messaging, and the AI coaching layer — along with the technical stack and the decisions that shaped it.',
             date: 'April 2026',
             readTime: '7 min read',
-            category: 'Product Launch',
+            category: 'Product',
             url: 'https://www.linkedin.com/posts/adrianbrou_traineros-the-operating-system-for-personal-activity-7450772379070492672-wQYx'
         },
         {

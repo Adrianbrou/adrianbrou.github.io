@@ -36,14 +36,14 @@ const About = () => {
                                     Hi, I'm Adrian
                                 </h2>
                                 <p className="text-gray-600 dark:text-gray-300 mb-4 leading-relaxed">
-                                    I'm a Backend Developer specializing in Python, FastAPI, PostgreSQL, and AWS.
-                                    I build and ship real products. My flagship — <strong>TrainerOS</strong> (<a href="https://aftrainer.app" target="_blank" rel="noopener noreferrer" className="text-primary-600 dark:text-primary-400 hover:underline">aftrainer.app</a>) —
-                                    is a full-stack PWA for personal trainers used daily by <strong>50+ trainers and clients</strong>, with Stripe in LIVE mode and real paid subscriptions.
-                                    Currently contracting at <strong>Juice Labz LLC</strong> migrating a golf fitness app to Go and React Native.
+                                    Backend developer with a Master's in Software Engineering. I work primarily in Python with FastAPI and Flask, PostgreSQL, and AWS.
+                                    I designed and built <strong>TrainerOS</strong> (<a href="https://aftrainer.app" target="_blank" rel="noopener noreferrer" className="text-primary-600 dark:text-primary-400 hover:underline">aftrainer.app</a>),
+                                    a gym management platform currently used by 50+ trainers and clients with paid Stripe subscriptions.
+                                    I am also contracting at Juice Labz LLC on a Go and React Native migration for a golf fitness application.
                                 </p>
                                 <p className="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
-                                    I also built and deployed a <strong>multi-tenant SaaS CRM</strong> on AWS ECS Fargate with Docker, RDS, and GitHub Actions CI/CD — 35+ endpoints, 52 passing tests, Redis caching, Secrets Manager.
-                                    Master's in Software Engineering. Boot.dev: 7 certificates across Python, Linux, Git, OOP, and AWS, 569 lessons, 32-day streak. I ship clean code and can explain every line I've written.
+                                    I previously deployed a multi-tenant SaaS CRM on AWS ECS Fargate with Docker, RDS, and a GitHub Actions CI/CD pipeline &mdash; 35 endpoints and a 52-test suite.
+                                    I've completed seven Boot.dev certifications across Python, Linux, Git, OOP, Power BI, and AWS, and am currently studying Go.
                                 </p>
                                 <div className="flex flex-wrap gap-3 mb-6">
                                     <span className="inline-flex items-center gap-2 px-4 py-2 bg-blue-700 text-white text-sm font-semibold rounded-full">
