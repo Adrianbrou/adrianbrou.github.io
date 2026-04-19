@@ -248,37 +248,19 @@ const Certifications = () => {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="flex-shrink-0 rounded-2xl overflow-hidden ring-2 ring-orange-500 hover:ring-4 transition-all"
-                                aria-label="View Boot.dev profile (auto-updating thumbnail)"
+                                aria-label="View Boot.dev profile (live auto-updating stats)"
                             >
                                 <img
                                     src="https://api.boot.dev/v1/users/public/078abe3b-90b3-41ab-a3fc-e9d6518a1746/thumbnail"
                                     alt="Boot.dev Profile (live stats)"
-                                    className="w-28 h-28 object-cover bg-black"
+                                    className="w-64 h-64 object-contain bg-black"
                                 />
                             </a>
                             <div className="flex-1">
-                                <div className="flex flex-wrap items-center gap-3 mb-2">
-                                    <h2 className="text-2xl font-bold text-gray-900 dark:text-white">Boot.dev</h2>
-                                    <span className="px-3 py-1 bg-orange-500 text-white text-sm font-bold rounded-full">
-                                        Level 50 Scholar
-                                    </span>
-                                </div>
+                                <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">Boot.dev</h2>
                                 <p className="text-gray-600 dark:text-gray-300 mb-4">
-                                    Back-end Developer Path (Python & Go) — joined Jan 17, 2026. Not a single day missed.
+                                    Back-end Developer Path (Python & Go). Joined January 17, 2026. The card on the left is a live embed from the Boot.dev API and reflects current level, XP, and course count.
                                 </p>
-                                <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-4">
-                                    {[
-                                        { label: 'Lessons Solved', value: '569' },
-                                        { label: 'Courses Done', value: '7' },
-                                        { label: 'Current Streak', value: '32 days' },
-                                        { label: 'XP Earned', value: '115,816' },
-                                    ].map((stat) => (
-                                        <div key={stat.label} className="text-center">
-                                            <div className="text-2xl font-bold text-orange-500">{stat.value}</div>
-                                            <div className="text-xs text-gray-500 dark:text-gray-400">{stat.label}</div>
-                                        </div>
-                                    ))}
-                                </div>
                                 <div className="flex flex-wrap gap-2">
                                     <a
                                         href="https://www.linkedin.com/in/adrianbrou"

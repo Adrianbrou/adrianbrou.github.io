@@ -118,7 +118,7 @@ export const skills: Skill[] = [
         id: 14,
         name: 'Fast Learning',
         icon: '🚀',
-        description: '569 lessons in 51 days, no days missed — consistent, self-directed learner',
+        description: 'Consistent, self-directed learner. Daily progress on Boot.dev since January 2026 without a missed day.',
         level: 95,
         category: 'soft'
     },
@@ -142,7 +142,7 @@ export const skills: Skill[] = [
         id: 17,
         name: 'Consistency & Discipline',
         icon: '🔥',
-        description: '32-day study streak, 65 commits in one month, ships every single day',
+        description: 'Daily study and commit habit maintained without interruption since the start of the Boot.dev path.',
         level: 95,
         category: 'soft'
     },

@@ -23,7 +23,7 @@ const Links = () => {
             name: 'Boot.dev',
             url: 'https://www.boot.dev/u/overcookedbath96',
             icon: Code,
-            description: 'Level 50 Scholar — 569 lessons solved, 7 courses completed, 32-day streak on the Back-end Developer Path',
+            description: 'Back-end Developer Path (Python and Go) with live profile stats and completed course certificates.',
             color: 'bg-orange-500',
         },
         {

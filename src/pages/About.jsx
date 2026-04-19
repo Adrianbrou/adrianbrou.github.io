@@ -43,7 +43,7 @@ const About = () => {
                                 </p>
                                 <p className="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
                                     I previously deployed a multi-tenant SaaS CRM on AWS ECS Fargate with Docker, RDS, and a GitHub Actions CI/CD pipeline &mdash; 35 endpoints and a 52-test suite.
-                                    I've completed seven Boot.dev certifications across Python, Linux, Git, OOP, Power BI, and AWS, and am currently studying Go.
+                                    I have completed Boot.dev certifications across Python, Linux, Git, Object-Oriented Programming, Power BI, and AWS, and am currently studying Go.
                                 </p>
                                 <div className="flex flex-wrap gap-3 mb-6">
                                     <span className="inline-flex items-center gap-2 px-4 py-2 bg-blue-700 text-white text-sm font-semibold rounded-full">
