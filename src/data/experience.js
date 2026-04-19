@@ -12,21 +12,38 @@ export const experience = [
     },
     {
         id: 2,
+        title: 'Founder & Full-Stack Developer — TrainerOS (aftrainer.app)',
+        company: 'Independent · Flagship Product',
+        location: 'Remote',
+        period: '2025 - Present',
+        description: [
+            'Designed, built, and shipped TrainerOS — a full-stack PWA for personal trainers, gym owners, and solo gym-goers. Live in production with 50+ trainers and clients using it daily, Stripe in LIVE mode, real paid subscriptions.',
+            'Role-based platform: super_admin → admin (gym owners) → trainer ($19/mo) → solo ($7.99/mo) → client (invited, free).',
+            'Core features: workout programming, session logging, auto-detected supersets, auto-surfaced PRs, nutrition tracking, progress photos, real-time chat, messaging, and CSV/PDF export.',
+            'AI layer — "Coach Assistant" powered by Claude API via Supabase Edge Functions: 7 AI actions including workout suggestions, coaching notes, PR predictions, nutrition plans, and weekly recaps.',
+            'Gamification system: XP, 17+ badges across 6 rarities, GitHub-style frequency heatmap, ascension/prestige, and shared-XP (trainers earn 20% of their clients\' XP).',
+            'Built the full Supabase backend: 12-table schema, 25 SQL migrations, row-level security policies, Postgres security-definer functions, real-time subscriptions, and private file storage with signed URLs.',
+            'PWA with Workbox runtime caching, Web Push notifications (VAPID — RFC 8291 AES-128-GCM), and Capacitor configured for Android.',
+            'Infrastructure: Vercel (auto-deploy on push to main) + Vercel serverless functions, Stripe webhooks + customer portal, Sentry (browserTracing + replay on error), Resend for transactional email, Cloudflare DNS.',
+        ]
+    },
+    {
+        id: 3,
         title: 'Data Analyst & Backend Developer',
         company: 'Anytime Fitness',
         location: 'Huntersville, NC',
         period: '2022 - Present',
         description: [
-            'Designed and shipped TrainerOS (aftrainer.app), a gym management platform used daily by 50+ trainers and clients. Own the product end-to-end: business logic, features, database, AI layer, and deployment on Vercel.',
-            'Built the full Supabase backend: 12-table schema, 25 SQL migrations, row-level security policies, Postgres security-definer functions, real-time subscriptions, and private file storage with signed URLs.',
-            'Added 7 AI actions through Supabase Edge Functions (Claude API) including workout suggestions, coaching notes, PR predictions, nutrition plans, and weekly recaps.',
-            'Set up real-time chat, Web Push notifications (VAPID), client self-registration via database triggers, and CSV/PDF export.',
+            'Architected and built a full-stack analytics platform (Flask API + React frontend) serving 1,500+ member records.',
+            'Designed and implemented RESTful APIs with 15+ KPI tracking endpoints for real-time data processing.',
             'Optimized PostgreSQL queries with CTEs and window functions for sub-second response times across 1,500+ records.',
+            'Developed automated Excel/CSV export functionality, reducing manual reporting time by 20+ hours monthly.',
             'Led and mentored teams of trainers, coordinating programs for 100+ clients.',
+            'Analyzed client data trends, improving training outcomes by 30%.',
         ]
     },
     {
-        id: 3,
+        id: 4,
         title: 'Freelance Full Stack Developer',
         company: 'Independent',
         location: 'Côte d\'Ivoire',
@@ -36,7 +53,7 @@ export const experience = [
         ]
     },
     {
-        id: 4,
+        id: 5,
         title: 'Software Engineering Intern',
         company: 'Freelance Projects',
         location: 'Côte d\'Ivoire',
@@ -48,7 +65,7 @@ export const experience = [
         ]
     },
     {
-        id: 5,
+        id: 6,
         title: 'Member — US Air National Guard',
         company: 'United States Air National Guard',
         location: 'North Carolina',
