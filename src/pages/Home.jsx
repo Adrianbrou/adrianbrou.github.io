@@ -1,29 +1,15 @@
-
-
 import { Link } from 'react-router-dom'
 import { useEffect, useState } from 'react'
-import { ArrowRight, Code, Database, TrendingUp } from 'lucide-react'
+import { ArrowRight, Code, Database, Rocket } from 'lucide-react'
 import { useScrollAnimation } from '../hooks/useScrollAnimation'
 
-// Import all background images
-import bg1 from '../assets/images/home-bg1.jpg'
-import bg2 from '../assets/images/home-bg2.jpg'
-import bg3 from '../assets/images/home-bg3.jpg'
+import heroBg from '../assets/images/home-bg1.jpg'
 
 const Home = () => {
     const [text, setText] = useState('')
     const [heroRef, heroVisible] = useScrollAnimation()
-    const [currentBg, setCurrentBg] = useState(0)
     const fullText = ' Adrian'
 
-    const backgrounds = [bg1, bg2, bg3]
-
-    // Randomize the initial background on first render
-    useEffect(() => {
-        setCurrentBg(Math.floor(Math.random() * backgrounds.length))
-    }, [])
-
-    // Typewriter effect for name
     useEffect(() => {
         let index = 0
         const interval = setInterval(() => {
@@ -34,54 +20,39 @@ const Home = () => {
         return () => clearInterval(interval)
     }, [])
 
-    // Rotate background every 6 seconds
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setCurrentBg((prev) => (prev + 1) % backgrounds.length)
-        }, 6000)
-        return () => clearInterval(interval)
-    }, [])
-
     const features = [
+        {
+            icon: Rocket,
+            title: 'Shipping to Production',
+            description: 'TrainerOS v2.0.0 — PWA for personal trainers. 50+ trainers and clients using it daily. Stripe LIVE, Supabase, Vercel.',
+        },
         {
             icon: Code,
             title: 'Backend Development',
-            description: 'Python, FastAPI, Flask — clean REST APIs, authentication, CRUD, ETL pipelines',
+            description: 'Python, FastAPI, Flask — clean REST APIs, JWT auth, CRUD, ETL pipelines. Learning Go on Boot.dev.',
         },
         {
             icon: Database,
-            title: 'Database Engineering',
-            description: 'PostgreSQL, SQL optimization, complex JOINs, CTEs, sub-second query performance',
-        },
-        {
-            icon: TrendingUp,
-            title: 'Full-Stack Deployment',
-            description: 'Built and deployed FuelCast end-to-end on Railway — real-time fuel analytics, 1,500+ records served',
+            title: 'Databases & Cloud',
+            description: 'PostgreSQL with RLS, SQL optimization, sub-second queries. AWS: ECS Fargate, RDS, ECR, S3, VPC, IAM, Secrets Manager.',
         },
     ]
 
     return (
         <div className="min-h-screen">
             <section className="relative text-white py-32 px-4 overflow-hidden flex items-center justify-center">
-                {/* Background images */}
-                {backgrounds.map((bg, index) => (
-                    <div
-                        key={index}
-                        className={`absolute inset-0 transition-opacity duration-1000 transform scale-105 ${index === currentBg ? 'opacity-100 scale-100' : 'opacity-0'
-                            }`}
-                        style={{
-                            backgroundImage: `url(${bg})`,
-                            backgroundSize: 'cover',
-                            backgroundPosition: 'center',
-                            backgroundRepeat: 'no-repeat',
-                        }}
-                    ></div>
-                ))}
+                <div
+                    className="absolute inset-0"
+                    style={{
+                        backgroundImage: `url(${heroBg})`,
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'center',
+                        backgroundRepeat: 'no-repeat',
+                    }}
+                ></div>
 
-                {/* Overlay for readability */}
                 <div className="absolute inset-0 bg-black/40"></div>
 
-                {/* Hero text */}
                 <div className="max-w-7xl mx-auto text-center relative z-10">
                     <div
                         ref={heroRef}
@@ -98,7 +69,7 @@ const Home = () => {
                             Backend Developer (Python)
                         </p>
                         <p className="text-lg md:text-xl mb-8 text-blue-200 max-w-3xl mx-auto">
-                            Building reliable, scalable backends with Python, FastAPI, and PostgreSQL. 569 lessons. 7 courses. 32-day streak. Shipping every day.
+                            I build and ship real products. TrainerOS — a full-stack PWA for personal trainers — is live with 50+ daily users. Currently contracting at Juice Labz LLC on a Go + React Native migration. Python, FastAPI, PostgreSQL, AWS.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                             <Link
@@ -129,7 +100,7 @@ const Home = () => {
                             What I Do
                         </h2>
                         <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-                            Combining technical skills with creative problem-solving
+                            Real backends, shipped products, real users
                         </p>
                     </div>
 

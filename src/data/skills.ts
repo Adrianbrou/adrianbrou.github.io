@@ -67,30 +67,38 @@ export const skills: Skill[] = [
     },
     {
         id: 8,
-        name: 'Linux & Deployment',
-        icon: '🐧',
-        description: 'Linux CLI, server-side logic, Railway & Vercel deployment, system tools',
-        level: 75,
+        name: 'AWS',
+        icon: '☁️',
+        description: 'ECS Fargate, RDS, ECR, S3, VPC, IAM, Secrets Manager — production SaaS deployment with Docker + GitHub Actions CI/CD. Boot.dev Learn AWS certified.',
+        level: 80,
         category: 'hard'
     },
     {
         id: 9,
-        name: 'React / Frontend',
-        icon: '💻',
-        description: 'React, React Native Expo, HTML, CSS, Tailwind — functional frontend basics',
-        level: 65,
+        name: 'Linux & Deployment',
+        icon: '🐧',
+        description: 'Linux CLI, server-side logic, Vercel, Railway, Supabase Edge Functions',
+        level: 80,
         category: 'hard'
     },
     {
         id: 10,
-        name: 'Go (Golang)',
-        icon: '🐹',
-        description: 'Currently learning via Boot.dev — HTTP servers, system design, concurrency',
-        level: 30,
+        name: 'React / PWA',
+        icon: '💻',
+        description: 'React 19, Vite, Tailwind, PWA (Workbox, Web Push), React Native Expo — frontend for TrainerOS',
+        level: 75,
         category: 'hard'
     },
     {
         id: 11,
+        name: 'Go (Golang)',
+        icon: '🐹',
+        description: 'Currently learning via Boot.dev — HTTP servers, system design, concurrency',
+        level: 35,
+        category: 'hard'
+    },
+    {
+        id: 12,
         name: 'Machine Learning',
         icon: '🤖',
         description: 'Scikit-learn, predictive modeling — ML 300 Certification In Progress',
@@ -99,7 +107,7 @@ export const skills: Skill[] = [
     },
     // ── Soft Skills ──────────────────────────────────────────────
     {
-        id: 12,
+        id: 13,
         name: 'Problem-Solving',
         icon: '🔎',
         description: 'Debugging, root-cause analysis, writing code I can explain line by line',
@@ -107,7 +115,7 @@ export const skills: Skill[] = [
         category: 'soft'
     },
     {
-        id: 13,
+        id: 14,
         name: 'Fast Learning',
         icon: '🚀',
         description: '569 lessons in 51 days, no days missed — consistent, self-directed learner',
@@ -115,7 +123,7 @@ export const skills: Skill[] = [
         category: 'soft'
     },
     {
-        id: 14,
+        id: 15,
         name: 'Leadership',
         icon: '🤝',
         description: '10+ years managing trainer teams, coordinating 100+ clients across two countries',
@@ -123,7 +131,7 @@ export const skills: Skill[] = [
         category: 'soft'
     },
     {
-        id: 15,
+        id: 16,
         name: 'Client Communication',
         icon: '💬',
         description: 'Requirements gathering, delivering custom solutions, ongoing stakeholder support',
@@ -131,7 +139,7 @@ export const skills: Skill[] = [
         category: 'soft'
     },
     {
-        id: 16,
+        id: 17,
         name: 'Consistency & Discipline',
         icon: '🔥',
         description: '32-day study streak, 65 commits in one month, ships every single day',

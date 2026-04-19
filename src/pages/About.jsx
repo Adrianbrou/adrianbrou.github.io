@@ -1,19 +1,12 @@
 import { Download } from 'lucide-react'
 import { useScrollAnimation } from '../hooks/useScrollAnimation'
 import { skills } from '../data/skills'
-import profilePic from '../assets/images/profile.jpg' // profile image
-import aboutBg from '../assets/images/about-bg.jpg' // background image for About section
+import profilePic from '../assets/images/profile.jpg'
 
 const About = () => {
     return (
-        <div
-            className="min-h-screen py-20 bg-gray-50 dark:bg-gray-900 bg-cover bg-center relative"
-            style={{
-                backgroundImage: `url(${aboutBg})`,
-                backgroundBlendMode: 'overlay',
-                backgroundColor: 'rgba(0,0,0,0.4)', // subtle overlay for readability
-            }}
-        >
+        <div className="min-h-screen py-20 bg-gradient-to-br from-slate-900 via-blue-950 to-slate-900 relative">
+
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 {/* Header */}
                 <div className="text-center mb-16 text-white">
@@ -43,15 +36,14 @@ const About = () => {
                                     Hi, I'm Adrian
                                 </h2>
                                 <p className="text-gray-600 dark:text-gray-300 mb-4 leading-relaxed">
-                                    I'm a Backend Developer specializing in Python, FastAPI, Flask, and PostgreSQL.
-                                    I hold a Master's in Software Engineering and have been building real-world backends ever since —
-                                    from a full-stack analytics platform serving 1,500+ member records to FuelCast, a deployed
-                                    data-driven app with real-time fuel price analytics.
+                                    I'm a Backend Developer specializing in Python, FastAPI, PostgreSQL, and AWS.
+                                    I build and ship real products. My flagship — <strong>TrainerOS</strong> (<a href="https://aftrainer.app" target="_blank" rel="noopener noreferrer" className="text-primary-600 dark:text-primary-400 hover:underline">aftrainer.app</a>) —
+                                    is a full-stack PWA for personal trainers used daily by <strong>50+ trainers and clients</strong>, with Stripe in LIVE mode and real paid subscriptions.
+                                    Currently contracting at <strong>Juice Labz LLC</strong> migrating a golf fitness app to Go and React Native.
                                 </p>
                                 <p className="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
-                                    In 51 days on Boot.dev's Back-end Developer Path, I completed 7 courses, earned 5 certificates,
-                                    solved 569 lessons, and maintained a 32-day streak — without skipping a single day.
-                                    I ship clean, tested code every day and can explain every line I've written.
+                                    I also built and deployed a <strong>multi-tenant SaaS CRM</strong> on AWS ECS Fargate with Docker, RDS, and GitHub Actions CI/CD — 35+ endpoints, 52 passing tests, Redis caching, Secrets Manager.
+                                    Master's in Software Engineering. Boot.dev: 7 certificates across Python, Linux, Git, OOP, and AWS, 569 lessons, 32-day streak. I ship clean code and can explain every line I've written.
                                 </p>
                                 <div className="flex flex-wrap gap-3 mb-6">
                                     <span className="inline-flex items-center gap-2 px-4 py-2 bg-blue-700 text-white text-sm font-semibold rounded-full">

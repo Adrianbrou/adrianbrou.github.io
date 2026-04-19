@@ -1,48 +1,54 @@
 export const experience = [
     {
         id: 1,
-        title: 'Backend Developer & Software Engineer',
-        company: 'Anytime Fitness',
-        location: 'Huntersville, NC',
-        period: '2022 - Present',
+        title: 'Backend Developer, Contractor',
+        company: 'Juice Labz LLC (Streak Performance)',
+        location: 'Remote',
+        period: 'Dec 2025 - Present',
         description: [
-            'Architected and built a full-stack analytics platform (Flask API + React frontend) serving 1,500+ member records.',
-            'Designed and implemented RESTful APIs for real-time data processing, supporting 15+ KPI tracking endpoints.',
-            'Optimized PostgreSQL database queries using advanced SQL techniques, achieving sub-second response times.',
-            'Developed automated data export functionality (Excel/CSV), reducing manual reporting time by 20+ hours monthly.',
-            'Led and mentored teams of trainers, coordinating programs for 100+ clients.',
-            'Analyzed client data trends, improving training outcomes by 30%.',
-            'Ensured secure handling and storage of user information.'
+            'Migrating a golf fitness web app into a mobile app using Go and React Native (Expo).',
+            'Working directly with the founder on architecture and feature decisions.',
         ]
     },
     {
         id: 2,
-        title: 'Real World Project: FuelCast (Full-Stack, Deployed on Railway)',
-        company: 'Independent',
-        location: 'Remote',
-        period: '2025 - Present',
+        title: 'Data Analyst & Backend Developer',
+        company: 'Anytime Fitness',
+        location: 'Huntersville, NC',
+        period: '2022 - Present',
         description: [
-            'Built and deployed FuelCast — a full-stack data-driven app for real-time fuel price and station analytics (live on Railway).',
-            'Developed the backend using Python, FastAPI, and PostgreSQL — RESTful APIs, authentication, CRUD operations.',
-            'Implemented secure data storage and optimized server-side logic for analytics workloads.',
-            '33+ commits this month across active repositories.'
+            'Designed and shipped TrainerOS (aftrainer.app), a gym management platform used daily by 50+ trainers and clients. Own the product end-to-end: business logic, features, database, AI layer, and deployment on Vercel.',
+            'Built the full Supabase backend: 12-table schema, 25 SQL migrations, row-level security policies, Postgres security-definer functions, real-time subscriptions, and private file storage with signed URLs.',
+            'Added 7 AI actions through Supabase Edge Functions (Claude API) including workout suggestions, coaching notes, PR predictions, nutrition plans, and weekly recaps.',
+            'Set up real-time chat, Web Push notifications (VAPID), client self-registration via database triggers, and CSV/PDF export.',
+            'Optimized PostgreSQL queries with CTEs and window functions for sub-second response times across 1,500+ records.',
+            'Led and mentored teams of trainers, coordinating programs for 100+ clients.',
         ]
     },
     {
         id: 3,
-        title: 'Software Engineering Intern / Freelance',
-        company: 'Freelance Projects',
+        title: 'Freelance Full Stack Developer',
+        company: 'Independent',
         location: 'Côte d\'Ivoire',
-        period: '2018 - 2020',
+        period: '2020 - 2021',
         description: [
-            'Developed backend services using Python and Flask for small business automation projects.',
-            'Designed database schemas and implemented SQL solutions for efficient data storage and retrieval.',
-            'Built REST APIs to integrate third-party services and automate business workflows.',
-            'Collaborated with clients to gather requirements and deliver custom software solutions.'
+            'Built a restaurant website end-to-end for a client: backend, frontend, menu management, reservations, and customer-facing UI using Python and Flask.',
         ]
     },
     {
         id: 4,
+        title: 'Software Engineering Intern',
+        company: 'Freelance Projects',
+        location: 'Côte d\'Ivoire',
+        period: '2018 - 2020',
+        description: [
+            'Built REST APIs and database schemas for client projects.',
+            'Gathered requirements and delivered solutions directly to clients.',
+            'Designed SQL solutions for efficient data storage and retrieval.',
+        ]
+    },
+    {
+        id: 5,
         title: 'Member — US Air National Guard',
         company: 'United States Air National Guard',
         location: 'North Carolina',
@@ -53,17 +59,4 @@ export const experience = [
             'Demonstrates discipline, teamwork, and commitment to service alongside a technical career.'
         ]
     },
-    {
-        id: 5,
-        title: 'Freelance Web Developer',
-        company: 'Self-Employed',
-        location: 'Remote',
-        period: 'Jan 2024 - Present',
-        description: [
-            'Built custom websites for local businesses.',
-            'Managed client relationships and project timelines.',
-            'Implemented SEO best practices to improve site rankings.',
-            'Provided ongoing maintenance and support.'
-        ]
-    }
 ]
